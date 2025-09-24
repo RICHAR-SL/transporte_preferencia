@@ -1,0 +1,85 @@
+body {
+  font-family: Inter, Arial, sans-serif;
+  margin: 0;
+  background: #f6f8fb;
+  color: #111;
+}
+header {
+  background: #0f172a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header .logo {
+  font-weight: bold;
+}
+header nav a {
+  color: #ccc;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+header nav a.active, header nav a:hover {
+  color: #fff;
+}
+.container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#cards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.card h3 { margin: 0; font-size: 0.9rem; color: #555; }
+.card p { font-size: 1.5rem; font-weight: bold; margin: 0.5rem 0 0; }
+.card.blue { border-left: 6px solid #3b82f6; }
+.card.green { border-left: 6px solid #10b981; }
+.card.purple { border-left: 6px solid #8b5cf6; }
+.card.orange { border-left: 6px solid #f97316; }
+#charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.chart-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+#chatbot-root {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  min-height: 100px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+}
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+th {
+  background: #f1f5f9;
+  color: #555;
+}
